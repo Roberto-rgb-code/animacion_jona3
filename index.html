@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboArm Pro - Precisión Robótica</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">RoboArm<span class="pro">Pro</span></div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Inicio</a></li>
+                <li><a href="#technology" class="nav-link">Tecnología</a></li>
+                <li><a href="#precision" class="nav-link">Precisión</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🤖</span>
+                <span class="badge-text">Próxima Generación</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-light">Robot</span>
+                <span class="title-bold">Arm</span>
+                <span class="title-accent">Pro</span>
+            </h1>
+            <p class="hero-subtitle">Redefiniendo la precisión en automatización industrial</p>
+            <p class="hero-description">
+                Experimenta el futuro de la robótica con nuestro brazo mecánico de alta precisión. 
+                Cada movimiento controlado por algoritmos avanzados de inteligencia artificial.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Precisión</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">0.01mm</span>
+                    <span class="stat-label">Tolerancia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Operación</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Solicitar Demo</button>
+                <button class="btn btn-outline">Ver Especificaciones</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Explora la tecnología</span>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="section technology-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Innovación</span>
+                <h2 class="section-title">Tecnología Avanzada</h2>
+                <p class="section-subtitle">
+                    Cada componente diseñado para la excelencia operacional
+                </p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Arquitectura Modular</h3>
+                    <p>Sistema de componentes intercambiables que permite configuraciones personalizadas para cualquier aplicación industrial.</p>
+                    <div class="tech-specs">
+                        <span>• 6 grados de libertad</span>
+                        <span>• Payload hasta 25kg</span>
+                        <span>• Alcance 1.8m</span>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 1V5" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 19V23" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4.22 4.22L7.07 7.07" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16.93 16.93L19.78 19.78" stroke="currentColor" stroke-width="2"/>
+                            <path d="M1 12H5" stroke="currentColor" stroke-width="2"/>
+                            <path d="M19 12H23" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Control de Precisión</h3>
+                    <p>Algoritmos de control adaptativos con retroalimentación en tiempo real para movimientos ultra-precisos.</p>
+                    <div class="tech-specs">
+                        <span>• Repetibilidad ±0.01mm</span>
+                        <span>• Velocidad máx. 2.5m/s</span>
+                        <span>• Control PID avanzado</span>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M21 12C21 16.97 16.97 21 12 21S3 16.97 3 12S7.03 3 12 3S21 7.03 21 12Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Seguridad Integrada</h3>
+                    <p>Sistemas de seguridad multicapa con detección de colisiones y parada de emergencia instantánea.</p>
+                    <div class="tech-specs">
+                        <span>• Sensores de proximidad</span>
+                        <span>• Parada de emergencia</span>
+                        <span>• Certificación ISO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precision Section -->
+    <section id="precision" class="section precision-section">
+        <div class="container">
+            <div class="precision-content">
+                <div class="precision-text">
+                    <span class="section-badge">Rendimiento</span>
+                    <h2 class="section-title">Precisión Milimétrica</h2>
+                    <p class="precision-description">
+                        Nuestro brazo robótico redefine los estándares de precisión en la industria. 
+                        Con tecnología de sensores avanzados y algoritmos de machine learning, 
+                        cada movimiento es calculado y ejecutado con una exactitud extraordinaria.
+                    </p>
+                    
+                    <div class="precision-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-content">
+                                <h4>Respuesta Instantánea</h4>
+                                <p>Tiempo de respuesta inferior a 5ms para correcciones automáticas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <h4>Targeting Preciso</h4>
+                                <p>Sistema de visión 3D integrado para posicionamiento exacto</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">🔄</div>
+                            <div class="feature-content">
+                                <h4>Adaptabilidad Total</h4>
+                                <p>Configuración automática según el tipo de tarea asignada</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="precision-metrics">
+                        <div class="metric">
+                            <span class="metric-value">±0.01mm</span>
+                            <span class="metric-label">Repetibilidad</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">360°</span>
+                            <span class="metric-label">Rotación total</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">25kg</span>
+                            <span class="metric-label">Carga útil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-badge">Contacto</span>
+                    <h2 class="section-title">¿Listo para Automatizar?</h2>
+                    <p class="contact-description">
+                        Descubre cómo RoboArm Pro puede transformar tu línea de producción. 
+                        Nuestros expertos están listos para diseñar la solución perfecta para tu industria.
+                    </p>
+                    
+                    <div class="contact-features">
+                        <div class="contact-feature">
+                            <span class="feature-icon">📞</span>
+                            <div>
+                                <h4>Consulta Personalizada</h4>
+                                <p>Análisis gratuito de tu proceso productivo</p>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <span class="feature-icon">🛠️</span>
+                            <div>
+                                <h4>Instalación Completa</h4>
+                                <p>Servicio llave en mano con capacitación incluida</p>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <span class="feature-icon">🔧</span>
+                            <div>
+                                <h4>Soporte 24/7</h4>
+                                <p>Mantenimiento preventivo y correctivo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Solicita tu Demo</h3>
+                    <form class="demo-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email corporativo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Empresa" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Selecciona tu industria</option>
+                                <option value="automotive">Automotriz</option>
+                                <option value="electronics">Electrónica</option>
+                                <option value="pharmaceutical">Farmacéutica</option>
+                                <option value="food">Alimentaria</option>
+                                <option value="other">Otra</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Cuéntanos sobre tu proyecto" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Agendar Demo Gratuita
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3>RoboArm<span class="pro">Pro</span></h3>
+                        <p>Automatización robótica de precisión para la industria del futuro</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="LinkedIn">📱</a>
+                            <a href="#" aria-label="Twitter">🐦</a>
+                            <a href="#" aria-label="YouTube">📺</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Productos</h4>
+                            <ul>
+                                <li><a href="#">RoboArm Pro</a></li>
+                                <li><a href="#">RoboArm Lite</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Software</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4>Soporte</h4>
+                            <ul>
+                                <li><a href="#">Documentación</a></li>
+                                <li><a href="#">Tutoriales</a></li>
+                                <li><a href="#">Centro de Ayuda</a></li>
+                                <li><a href="#">Contacto Técnico</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4>Empresa</h4>
+                            <ul>
+                                <li><a href="#">Acerca de</a></li>
+                                <li><a href="#">Carreras</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Prensa</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 RoboArm Pro. Todos los derechos reservados.</p>
+                    <div class="footer-legal">
+                        <a href="#">Privacidad</a>
+                        <a href="#">Términos</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
